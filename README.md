@@ -4,11 +4,13 @@ The purpose of this repository is to answer some questions I had while learning 
 
 These are the questions I answered:
 
-- Does the initialization code know the address of it's contract? (what's the value of `address(this)`?)
-- Does initialization code have access to `address(this).balance`?
-- Sending a transaction without `to` field is not the same as sending a transaction to the zero address (0x0000...)
-- How are initial values and immutable variables set in the initialization code?
-- What is the output of the compilation of solc by default? (is it the creation code or the runtime code?)
-- Are the addresses of smart contracts deployed by EOAs computed in the same way as smart contracts created with `create`?
-- Verify that public and external functions cannot be accessed during initialization code execution
-- Can the initialisation code return empty list of bytes?
+1. Does the initialisation code know the address of it's contract? (what's the value of `address(this)`?)
+2. How the address of a contract is pre-computed in solidity for both `create` and `create2`?
+3. When using `create`, is the nonce increased and then the address computed or is it computed with the current nonce?
+4. Does initialisation code have access to `address(this).balance`?
+5. Verify that sending a transaction without `to` field is not the same as sending a transaction to the zero address (0x0000...)
+6. How are initial values and immutable variables set in the initialisation code?
+7. What is the output of the compilation of solc by default? (is it the creation code or the runtime code?)
+8. Are the addresses of smart contracts deployed by EOAs computed in the same way as smart contracts created with `create`?
+9. Verify that public and external functions cannot be accessed during initialisation code execution
+10. Can the initialisation code return empty list of bytes?
