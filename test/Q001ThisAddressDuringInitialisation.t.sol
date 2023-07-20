@@ -4,6 +4,10 @@ pragma solidity ^0.8.13;
 import "forge-std/Test.sol";
 import "../src/SaveAddress.sol";
 
+/// @notice Does the initialisation code know the address of it's contract?
+///     Answer: yes.
+///     The tests show that the address is known at initialization time using
+///     `create` and `create2`
 contract Q001ThisAddressDuringInitialisationTest is Test {
     function testSmartContractAddressIsKnownAtInitialisationWithCreate() public {
         SaveAddress c = new SaveAddress();
