@@ -5,7 +5,7 @@ The purpose of this repository is to answer some questions I had while learning 
 These are the questions I answered:
 
 1. Does the initialisation code know the address of it's contract? (what's the value of `address(this)`?)
-2. How the address of a contract is pre-computed in solidity for both `create` and `create2`?
+2. How can the address of a smart contract be pre-computed in solidity when using `create` and `create2`?
 3. When using `create`, is the nonce increased and then the address computed or is it computed with the current nonce?
 4. Does initialisation code have access to `address(this).balance`?
 5. Verify that sending a transaction without `to` field is not the same as sending a transaction to the zero address (0x0000...)
