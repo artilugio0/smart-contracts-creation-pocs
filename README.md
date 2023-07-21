@@ -9,7 +9,7 @@ These are the questions I answered:
 3. When using `create`, is the nonce increased and then the address computed or is it computed with the current nonce? - [Answer](./test/Q003NonceIncreaseOnContractCreation.t.sol)
 4. Does initialisation code have access to `address(this).balance`? - [Answer](./test/Q004InitialisationCodeCanAccessContractBalance.t.sol)
 5. Verify that sending a transaction without `to` field is not the same as sending a transaction to the zero address (0x0000...) - [Answer](./test-scripts/Q005TransactionWithoutToVsToZeroAddress.sh)
-6. How are initial values and immutable variables set in the initialisation code?
+6. How are initial values and immutable variables set in the initialisation code? - [Answer](./src/ImmutableVars.sol)
 7. What is the output of the compilation of solc by default? (is it the creation code or the runtime code?)
 8. Are the addresses of smart contracts deployed by EOAs computed in the same way as smart contracts created with `create`?
 9. Verify that public and external functions cannot be accessed during initialisation code execution
