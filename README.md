@@ -14,4 +14,4 @@ These are the questions I answered:
     - Answer: the desired output can be specified using the flags `--bin` for creation or `--bin-runtime` for runtime
 8. Are the addresses of smart contracts deployed by EOAs computed in the same way as smart contracts created with `create`? - [Answer](./test-scripts/Q008AddressOfContractsDeployedByEOA.sh)
 9. Verify that public and external functions cannot be accessed during initialisation code execution - [Answer](./test/Q009ExternalAndPublicFunctionsNotAvailableAtInitialisation.t.sol)
-10. Can the initialisation code return empty list of bytes?
+10. Can the initialisation code sent by an EOA return an empty list of bytes? - [Answer](./test-scripts/Q010InitialisationCodeReturnsEmptyList.sh)
