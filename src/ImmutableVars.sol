@@ -2,7 +2,7 @@ pragma solidity 0.8.19;
 
 /// @notice How are initial values and immutable variables set in the initialisation code?
 ///     Answer: immutable variables are copied to the runtime code when the creation
-///     code is executed
+///     code is executed. They are not stored in storage
 ///     TODO: make the analysis for initial values of state variables
 contract ImmutableVars {
     uint256 public immutable state;
@@ -30,7 +30,7 @@ detailed article about this, but here are some highlights:
     updated with the parameter passed that was stored in memory (instruction
     `[b9]`)
 - The runtime code is returned in instructon `[b9]`
-- The immutable variable is not stored in storage it is stored in the account
+- The immutable variable is not stored in storage, it is stored in the account
     code, that is why it is cheaper than a state variable
 
 [Link to evm.codes](https://www.evm.codes/playground?fork=shanghai&unit=Wei&codeType=Bytecode&code='va0iy10ks1lmb3q3qlmb8339pp01s2p0ty329ty7bzqvqpp52_uya8zxny58py45zp14y63kzrp5Zy75py4fzoj840312my9m7ygy40zhry9f84828u1y66z91_ozvq51v9byc0r39rv4gm2v9brf3fevqiv0fkv043lv2857r35ve01cq63c19d93fb14v2d57hxv33v47zs1v3e9tv82zs1q9103gf3h7fYY~0pznv7cpv6bz8252_j0Zv95r830184v75zo56YY002a'~000z56hyl0xrqfdhw~~~~~v60u50t1gsv405r6~q80p81o9291_nr8Z9Zzm15l610k57xujzrv2082is234qmh5bg90_uuZtuYww%01YZ_ghijklmnopqrstuvwxyz~_)
