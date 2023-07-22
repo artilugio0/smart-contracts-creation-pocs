@@ -16,4 +16,4 @@ These are the questions I answered:
 9. Verify that public and external functions cannot be accessed during initialisation code execution - [Answer](./test/Q009ExternalAndPublicFunctionsNotAvailableAtInitialisation.t.sol)
 10. Can the initialisation code sent by an EOA return an empty list of bytes? - [Answer](./test-scripts/Q010InitialisationCodeReturnsEmptyList.sh)
 11. Can the initialisation code sent by a contract return an empty list of bytes using `create2`? - [Answer](./test/Q011CodelessContractWithCreate2.t.sol)
-12. Can initialisation code sent by a contract that returns and empty list of bytes be executed multiple times? - [Answer](./test/Q012DeployCodelessContractMultipleTimes.t.sol)
+12. Can initialisation code sent by a contract that returns and empty list of bytes be executed multiple times using create2 with the same salt? - [Answer](./test/Q012DeployCodelessContractMultipleTimes.t.sol)
